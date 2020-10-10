@@ -91,7 +91,8 @@ local function HandleMessage(prat_msg, event, ...)
           ['clColor'] = GetClassColorByGUID(guid)
         }
         if sender ~= "" then
-          msg['arg2'] = sender
+          local icname, short_icname = LibRPNames.Get( sender )
+          msg['arg2'] = icname
         end
       end
       Elephant:CaptureNewMessage(msg, cIndex)
@@ -162,8 +163,14 @@ local function HandleMessage(prat_msg, event, ...)
         event == "CHAT_MSG_INSTANCE_CHAT" or
         event == "CHAT_MSG_INSTANCE_CHAT_LEADER"
       then
-        msg.arg2 = sender
-        msg.clColor = GetClassColorByGUID(guid)
+        local icname, short_icname, icon, iccolor = LibRPNames.Get( sender, guid )
+        msg.arg2 = icname
+        --if event == "CHAT_MSG_SAY" or event == "CHAT_MSG_EMOTE" or event == "CHAT_MSG_YELL" then
+        --    local icname, short_icname = LibRPNames.Get( sender )
+        --  msg.arg2 = icname
+        --end
+        msg.clColor = iccolor
+        --msg.clColor = GetClassColorByGUID(guid)
       end
 
       if event == "CHAT_MSG_WHISPER" then
