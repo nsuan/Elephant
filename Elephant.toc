@@ -1,4 +1,4 @@
-﻿## Interface: 80300
+﻿## Interface: 90001
 ## Title: Elephant
 ## Title-zhCN: Elephant �?�天记录器
 ## Notes: A friendly companion that remembers the chat.
@@ -8,17 +8,16 @@
 ## Notes-zhTW: �?�天記錄�?助手。
 ## Notes-ruRU: Друже�?твенный компаньон который запоминает чат.
 ## Author: Tevruden
-## Version: @project-version@
+## Version: 9.0.1a
 ## SavedVariables: ElephantDB
 ## SavedVariablesPerCharacter: ElephantDBPerChar
 ## OptionalDeps: CallbackHandler-1.0, Ace3, LibDataBroker-1.1, LibDBIcon-1.0, Prat
 ## X-Category: Chat/Communication
-## X-Credits: harl, Antikleia, <CWDG>月色狼影, Cossy, All-in-one Mighty
+## X-Credits: harl, Antikleia, <CWDG>月色狼影, Cossy, AllInOneMighty
 ## X-Embeds: CallbackHandler-1.0, Ace3, LibDataBroker-1.1, LibDBIcon-1.0
 ## X-Curse-Project-ID: 2309
 ## X-WoWI-ID: 5423
 
-#@no-lib-strip@
 Libs\LibStub\LibStub.lua
 
 Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
@@ -32,9 +31,6 @@ Libs\AceConfig-3.0\AceConfig-3.0.xml
 
 Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
-
-Libs\RPNames\RPNames.lua
-#@end-no-lib-strip@
 
 Locales\Locale-enUS.lua
 Locales\Locale-frFR.lua
