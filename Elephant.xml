@@ -8,7 +8,7 @@
 				"TOP",
 				Elephant.defaultConf.position.x,
 				Elephant.defaultConf.position.y)
-			getglobal(self:GetName().."TitleFontString"):SetText("Elephant 9.0.1a")
+			getglobal(self:GetName().."TitleFontString"):SetText("Elephant 9.0.5a")
 		</OnLoad>
 		<OnShow>
 			if ElephantCopyFrame then
